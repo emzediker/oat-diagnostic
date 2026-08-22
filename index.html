@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>OAT Diagnostic — 50 Questions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header><div><h1>OAT Diagnostic</h1><p>50-question science & math diagnostic</p></div><div id="timer">00:00</div></header>
+<main>
+<section id="startScreen" class="card"><h2>Ready?</h2><p>This diagnostic contains 10 questions each in Biology, General Chemistry, Organic Chemistry, Physics, and Quantitative Reasoning.</p><ul><li>50 original practice questions</li><li>Choose one answer per question</li><li>Your results include section scores and an estimated OAT-style 200–400 score</li><li>This is a practice estimate, not an official OAT score conversion</li></ul><button id="startBtn">Start Diagnostic</button></section>
+<section id="testScreen" class="hidden">
+<div class="progressWrap"><div id="progressBar"></div></div>
+<div class="meta"><span id="sectionLabel"></span><span id="questionCount"></span></div>
+<div class="card"><div class="topic" id="topicLabel"></div><h2 id="questionText"></h2><div id="choices"></div></div>
+<div class="nav"><button id="prevBtn">Previous</button><button id="nextBtn">Next</button><button id="submitBtn" class="danger hidden">Submit Test</button></div>
+<div class="jump" id="jump"></div>
+</section>
+<section id="resultsScreen" class="hidden"></section>
+</main>
+</div>
+<script src="questions.js"></script><script src="app.js"></script>
+</body></html>
